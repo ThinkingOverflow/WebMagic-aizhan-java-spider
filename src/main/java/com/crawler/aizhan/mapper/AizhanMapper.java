@@ -6,19 +6,11 @@ import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
 /**
- * @Author Ximenchuiyun
- * @Date 2022/7/17 17:33
  * @Description
  */
 @Mapper
 @Repository
 public interface AizhanMapper {
-    /**
-     * 查询所有数据
-     * @return
-     */
-    int selectNumBySearchContent(@Param("searchContent") String searchContent);
-
     /**
      * 添加数据
      * @param result

@@ -12,8 +12,6 @@ import us.codecraft.webmagic.pipeline.Pipeline;
 import java.util.ArrayList;
 
 /**
- * @Author Ximenchuiyun
- * @Date 2022/7/17 17:58
  * @Description
  */
 @Component

@@ -1,6 +1,7 @@
 package com.crawler.aizhan.service.process;
 
 import com.crawler.aizhan.dto.SearchResult;
+import org.apache.commons.lang3.StringUtils;
 import org.assertj.core.util.Lists;
 import org.springframework.stereotype.Component;
 import us.codecraft.webmagic.Page;
@@ -13,8 +14,6 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * @Author Ximenchuiyun
- * @Date 2022/7/17 17:56
  * @Description
  */
 @Component
@@ -22,7 +21,8 @@ public class AizhanProcessor implements PageProcessor {
     private Site site = Site.me().setDomain("baidurank.aizhan.com")
             .setRetryTimes(3).setSleepTime(1000)
             .setUserAgent("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36")
-            .addCookie("userId" , "1432588");
+            //查询输入userid的 cookie 用于登录（不登录无法拉取到数据）
+            .addCookie("userId" , "xxxxxx");
 
     @Override
     public void process(Page page) {
@@ -115,7 +115,25 @@ public class AizhanProcessor implements PageProcessor {
 //            aizhanInfoList.add(result);
 //        }
 
+        //每次加载完一页，先把数据添加到 field 中，这样 pipeline 就可以拿到数据（等 process 执行完就会跳转到 pipeline 中去执行插入数据）
         page.putField("aizhanInfoList" , aizhanInfoList);
+
+        //下面代码的功能：将下一页的数据放入查询链接列表
+        List<Selectable> aNodes = page.getHtml().xpath("//div[@class='baidurank-pager']/ul/a").nodes();
+        int nextPage = -1;
+        for (int i = 0; i < aNodes.size(); i++) {
+            Selectable classVal = aNodes.get(i).$("a", "class");
+            if(StringUtils.isNotEmpty(classVal.toString())){
+                nextPage = i +1;
+                break;
+            }
+        }
+        //不是第一页也没有超过最后一页（第一页重新进来的时候已经查找）
+        if(nextPage > 0 && nextPage < aNodes.size()){
+            page.addTargetRequest(aNodes.get(nextPage).$("a" , "href").toString());
+        }else{
+            System.out.println("finish");
+        }
 
 
     }

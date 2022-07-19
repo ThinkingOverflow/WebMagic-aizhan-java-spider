@@ -14,8 +14,6 @@ import java.util.Scanner;
 import java.util.regex.Pattern;
 
 /**
- * @Author Ximenchuiyun
- * @Date 2022/7/18 15:55
  * @Description
  */
 @Service
@@ -61,25 +59,13 @@ public class AizhanService {
                 continue;
             }
 
-
-            //查找前50页的数据
-            for (int i = 1; i <= 50; i++) {
-                String url = "https://baidurank.aizhan.com/baidu/" + searchContent;
-                Spider.create(aizhanProcessor)
-                        .addUrl(url)
-                        .addPipeline(aizhanPipeline)
-                        .run();
-
-                //拉取第一页的数据后，如果数据库没有数据，说明输入的域名找不到对应的数据，则终止查询
-                if(i == 1){
-                    int pageOneNum = aizhanMapper.selectNumBySearchContent(searchContent);
-                    if(pageOneNum == 0){
-                        log.info("域名对应的信息不存在！");
-                        break;
-                    }
-                }
-            }
-
+            //先查找第一页数据
+            String url = "https://baidurank.aizhan.com/baidu/" + searchContent;
+            Spider.create(aizhanProcessor)
+                    .addUrl(url)
+                    .addPipeline(aizhanPipeline)
+                    .thread(1)
+                    .run();
         }
 
     }
