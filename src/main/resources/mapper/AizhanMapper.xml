@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.crawler.mapper.AizhanMapper">
+
+    <insert id="addSearchData" parameterType="com.crawler.dto.SearchResult">
+        insert into search_result( key_char , rank , pc_search_num , include_num , page_title , search_content , search_date) values (#{keyChar} , #{rank},#{pcSearchNum},#{includeNum},#{pageTitle},#{searchContent},#{searchDate})
+    </insert>
+
+    <select id="selectByDateAndContent" resultType="Integer" parameterType="string">
+        select count(*) from search_result where search_content = #{searchContent} and search_date = #{searchDate};
+    </select>
+
+</mapper>
