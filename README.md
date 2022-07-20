@@ -1,8 +1,8 @@
 ### 功能
 
-使用webmagic实现的爱站网百度权重数据（https://baidurank.aizhan.com/）抓取
+使用webmagic实现的爱站网百度权重数据（https://baidurank.aizhan.com/） 抓取
 
-![爱站网百度权重查询首页](https://pic.imgdb.cn/item/62d7be49f54cd3f937c4e670.jpg)  
+![爱站网百度权重查询首页](https://files.imgdb.cn/static/images/e6/70/62d7be49f54cd3f937c4e670.jpg)  
 
 ### 博客
 详细的功能以及代码解析见我的博客：
