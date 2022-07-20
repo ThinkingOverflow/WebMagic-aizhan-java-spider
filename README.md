@@ -5,13 +5,14 @@
 ![爱站网百度权重查询首页](https://files.imgdb.cn/static/images/e6/70/62d7be49f54cd3f937c4e670.jpg)  
 
 ### 博客
+
 详细的功能以及代码解析见我的博客：
 
 ### 环境
 
-jdk1.8
-maven
-webmagic
+jdk1.8 /br
+maven /br
+webmagic /br
 
 ### 特别声明
 
