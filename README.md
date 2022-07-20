@@ -10,9 +10,7 @@
 
 ### 环境
 
-jdk1.8 /br
-maven /br
-webmagic /br
+jdk1.8 、maven 、webmagic 
 
 ### 特别声明
 
