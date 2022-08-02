@@ -1,12 +1,10 @@
 ### 功能
 
-使用webmagic实现的爱站网百度权重数据（https://baidurank.aizhan.com/） 抓取
-
-![爱站网百度权重查询首页](https://files.imgdb.cn/static/images/e6/70/62d7be49f54cd3f937c4e670.jpg)  
+使用 springboot 整合 webmagic 实现的爱站网百度权重数据（https://baidurank.aizhan.com/） 爬取
 
 ### 博客
 
-详细的功能以及代码解析见我的博客： [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://blog.csdn.net/ThinkingOverflow/article/details/125928405)     
+ [![Open In Colab]([https://colab.research.google.com/assets/colab-badge.svg](https://img.shields.io/badge/Blogger-FF5722?style=for-the-badge&logo=blogger&logoColor=white))](https://blog.csdn.net/ThinkingOverflow/article/details/125928405)     
 
 
 ### 环境
