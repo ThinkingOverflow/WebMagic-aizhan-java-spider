@@ -4,12 +4,14 @@
 
 ### 博客
 
- [![Open In Colab]([https://colab.research.google.com/assets/colab-badge.svg](https://img.shields.io/badge/Blogger-FF5722?style=for-the-badge&logo=blogger&logoColor=white))](https://blog.csdn.net/ThinkingOverflow/article/details/125928405)     
+<p>
+ <a href="[https://www.linkedin.com/in/zhanghang0704/](https://blog.csdn.net/ThinkingOverflow/article/details/125928405)"><img src="https://img.shields.io/badge/Blogger-FF5722?style=for-the-badge&logo=blogger&logoColor=white" height="25px" alt="LinkedIn"> </a>
+</p> 
 
 
 ### 环境
 
-jdk1.8 、maven 、webmagic 
+jdk1.8 、maven 、webmagic 、springboot
 
 ### 特别声明
 
