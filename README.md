@@ -6,7 +6,8 @@
 
 ### 博客
 
-详细的功能以及代码解析见我的博客：
+详细的功能以及代码解析见我的博客： [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://blog.csdn.net/ThinkingOverflow/article/details/125928405)     
+
 
 ### 环境
 
