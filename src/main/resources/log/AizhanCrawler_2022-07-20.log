@@ -1,0 +1,69 @@
+2022-07-20 15:54:21.112 [main] INFO  com.crawler.AizhanApplication - Starting AizhanApplication using Java 1.8.0_211 on PC210300223 with PID 2276 (F:\MyOwnProject\AizhanBaiduCrawler\target\classes started by linkangjie in F:\MyOwnProject\AizhanBaiduCrawler)
+2022-07-20 15:54:21.116 [main] INFO  com.crawler.AizhanApplication - No active profile set, falling back to 1 default profile: "default"
+2022-07-20 15:54:22.468 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2022-07-20 15:54:22.476 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2022-07-20 15:54:22.477 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2022-07-20 15:54:22.477 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-07-20 15:54:22.662 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2022-07-20 15:54:22.662 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1468 ms
+2022-07-20 15:54:23.672 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2022-07-20 15:54:23.720 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2022-07-20 15:54:23.728 [main] INFO  com.crawler.AizhanApplication - Started AizhanApplication in 3.29 seconds (JVM running for 5.891)
+2022-07-20 15:54:51.241 [http-nio-8080-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-07-20 15:54:51.241 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2022-07-20 15:54:51.242 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2022-07-20 15:56:09.534 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2022-07-20 15:56:09.540 [http-nio-8080-exec-1] WARN  com.zaxxer.hikari.util.DriverDataSource - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-07-20 15:56:10.047 [http-nio-8080-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2022-07-20 15:56:17.549 [http-nio-8080-exec-1] INFO  us.codecraft.webmagic.Spider - Spider baidurank.aizhan.com started!
+2022-07-20 15:56:18.562 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success https://baidurank.aizhan.com/baidu/baidu.com
+2022-07-20 15:56:28.616 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success https://baidurank.aizhan.com/baidu/baidu.com/-1/0/2/position/1/
+2022-07-20 15:56:34.390 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success https://baidurank.aizhan.com/baidu/baidu.com/-1/0/3/position/1/
+2022-07-20 15:56:35.632 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success https://baidurank.aizhan.com/baidu/baidu.com/-1/0/4/position/1/
+2022-07-20 15:56:36.873 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success https://baidurank.aizhan.com/baidu/baidu.com/-1/0/5/position/1/
+2022-07-20 15:56:38.130 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success https://baidurank.aizhan.com/baidu/baidu.com/-1/0/6/position/1/
+2022-07-20 15:56:39.382 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success https://baidurank.aizhan.com/baidu/baidu.com/-1/0/7/position/1/
+2022-07-20 15:56:40.575 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success https://baidurank.aizhan.com/baidu/baidu.com/-1/0/8/position/1/
+2022-07-20 15:56:41.761 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success https://baidurank.aizhan.com/baidu/baidu.com/-1/0/9/position/1/
+2022-07-20 15:56:42.967 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success https://baidurank.aizhan.com/baidu/baidu.com/-1/0/10/position/1/
+2022-07-20 15:56:44.189 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success https://baidurank.aizhan.com/baidu/baidu.com/-1/0/11/position/1/
+2022-07-20 15:56:45.425 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success https://baidurank.aizhan.com/baidu/baidu.com/-1/0/12/position/1/
+2022-07-20 15:56:46.701 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success https://baidurank.aizhan.com/baidu/baidu.com/-1/0/13/position/1/
+2022-07-20 15:56:47.965 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success https://baidurank.aizhan.com/baidu/baidu.com/-1/0/14/position/1/
+2022-07-20 15:56:49.221 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success https://baidurank.aizhan.com/baidu/baidu.com/-1/0/15/position/1/
+2022-07-20 15:56:50.477 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success https://baidurank.aizhan.com/baidu/baidu.com/-1/0/16/position/1/
+2022-07-20 15:56:51.735 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success https://baidurank.aizhan.com/baidu/baidu.com/-1/0/17/position/1/
+2022-07-20 15:56:52.929 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success https://baidurank.aizhan.com/baidu/baidu.com/-1/0/18/position/1/
+2022-07-20 15:56:54.170 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success https://baidurank.aizhan.com/baidu/baidu.com/-1/0/19/position/1/
+2022-07-20 15:56:55.354 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success https://baidurank.aizhan.com/baidu/baidu.com/-1/0/20/position/1/
+2022-07-20 15:56:56.598 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success https://baidurank.aizhan.com/baidu/baidu.com/-1/0/21/position/1/
+2022-07-20 15:56:57.848 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success https://baidurank.aizhan.com/baidu/baidu.com/-1/0/22/position/1/
+2022-07-20 15:56:59.095 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success https://baidurank.aizhan.com/baidu/baidu.com/-1/0/23/position/1/
+2022-07-20 15:57:00.399 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success https://baidurank.aizhan.com/baidu/baidu.com/-1/0/24/position/1/
+2022-07-20 15:57:01.619 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success https://baidurank.aizhan.com/baidu/baidu.com/-1/0/25/position/1/
+2022-07-20 15:57:02.891 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success https://baidurank.aizhan.com/baidu/baidu.com/-1/0/26/position/1/
+2022-07-20 15:57:04.137 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success https://baidurank.aizhan.com/baidu/baidu.com/-1/0/27/position/1/
+2022-07-20 15:57:05.362 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success https://baidurank.aizhan.com/baidu/baidu.com/-1/0/28/position/1/
+2022-07-20 15:57:06.604 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success https://baidurank.aizhan.com/baidu/baidu.com/-1/0/29/position/1/
+2022-07-20 15:57:07.797 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success https://baidurank.aizhan.com/baidu/baidu.com/-1/0/30/position/1/
+2022-07-20 15:57:09.031 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success https://baidurank.aizhan.com/baidu/baidu.com/-1/0/31/position/1/
+2022-07-20 15:57:10.284 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success https://baidurank.aizhan.com/baidu/baidu.com/-1/0/32/position/1/
+2022-07-20 15:57:11.555 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success https://baidurank.aizhan.com/baidu/baidu.com/-1/0/33/position/1/
+2022-07-20 15:57:12.790 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success https://baidurank.aizhan.com/baidu/baidu.com/-1/0/34/position/1/
+2022-07-20 15:57:14.078 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success https://baidurank.aizhan.com/baidu/baidu.com/-1/0/35/position/1/
+2022-07-20 15:57:15.317 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success https://baidurank.aizhan.com/baidu/baidu.com/-1/0/36/position/1/
+2022-07-20 15:57:16.567 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success https://baidurank.aizhan.com/baidu/baidu.com/-1/0/37/position/1/
+2022-07-20 15:57:17.764 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success https://baidurank.aizhan.com/baidu/baidu.com/-1/0/38/position/1/
+2022-07-20 15:57:18.962 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success https://baidurank.aizhan.com/baidu/baidu.com/-1/0/39/position/1/
+2022-07-20 15:57:20.239 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success https://baidurank.aizhan.com/baidu/baidu.com/-1/0/40/position/1/
+2022-07-20 15:57:21.456 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success https://baidurank.aizhan.com/baidu/baidu.com/-1/0/41/position/1/
+2022-07-20 15:57:22.638 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success https://baidurank.aizhan.com/baidu/baidu.com/-1/0/42/position/1/
+2022-07-20 15:57:23.818 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success https://baidurank.aizhan.com/baidu/baidu.com/-1/0/43/position/1/
+2022-07-20 15:57:25.295 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success https://baidurank.aizhan.com/baidu/baidu.com/-1/0/44/position/1/
+2022-07-20 15:57:26.497 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success https://baidurank.aizhan.com/baidu/baidu.com/-1/0/45/position/1/
+2022-07-20 15:57:27.688 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success https://baidurank.aizhan.com/baidu/baidu.com/-1/0/46/position/1/
+2022-07-20 15:57:28.943 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success https://baidurank.aizhan.com/baidu/baidu.com/-1/0/47/position/1/
+2022-07-20 15:57:30.132 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success https://baidurank.aizhan.com/baidu/baidu.com/-1/0/48/position/1/
+2022-07-20 15:57:31.361 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success https://baidurank.aizhan.com/baidu/baidu.com/-1/0/49/position/1/
+2022-07-20 15:57:32.590 [pool-1-thread-1] INFO  u.c.webmagic.downloader.HttpClientDownloader - downloading page success https://baidurank.aizhan.com/baidu/baidu.com/-1/0/50/position/1/
+2022-07-20 15:57:33.620 [http-nio-8080-exec-1] INFO  us.codecraft.webmagic.Spider - Spider baidurank.aizhan.com closed! 50 pages downloaded.
