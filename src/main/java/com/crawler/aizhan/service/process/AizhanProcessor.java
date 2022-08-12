@@ -14,10 +14,12 @@ import java.util.Date;
 import java.util.List;
 
 /**
+ * @Author ThinkingOverflow
  * @Description
  */
 @Component
 public class AizhanProcessor implements PageProcessor {
+
     private Site site = Site.me().setDomain("baidurank.aizhan.com")
             .setRetryTimes(3).setSleepTime(1000)
             .setUserAgent("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36")
@@ -44,6 +46,7 @@ public class AizhanProcessor implements PageProcessor {
                 return;
             }
             int size = tdList.size();
+            //倒着来查找是为了避开第一行有6个单元格的情况
             Selectable keyCharSele = tdList.get(size-5).xpath("//a/text()");
             Selectable rankSele = tdList.get(size-4).xpath("//span/text()");
             Selectable pcSearchNumSele = tdList.get(size-3).xpath("//a/text()");
@@ -76,7 +79,7 @@ public class AizhanProcessor implements PageProcessor {
 //            Selectable selectable = trList.get(i);
 //            //先判断拉取的网站数据是否存在
 //            Selectable notFindInfo = selectable.xpath("/tr/td[2]/text()");
-//            if(Objects.nonNull(notFindInfo) && "未找到信息!".contains(notFindInfo.toString())){
+//            if(Objects.nonNull(notFindInfo) && "未找到信息!".equals(notFindInfo.toString())){
 //                //拉取的url对应的信息不存在不存在，直接结束程序
 //                return;
 //            }

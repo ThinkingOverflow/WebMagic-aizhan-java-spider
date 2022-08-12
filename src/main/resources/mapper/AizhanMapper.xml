@@ -2,12 +2,13 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 注意命名空间 namespace 的包名 -->
 <mapper namespace="com.crawler.aizhan.mapper.AizhanMapper">
-
+    <!-- 添加数据 -->
     <insert id="addSearchData" parameterType="com.crawler.aizhan.dto.SearchResult">
         insert into search_result( key_char , rank , pc_search_num , include_num , page_title , search_content , search_date) values (#{keyChar} , #{rank},#{pcSearchNum},#{includeNum},#{pageTitle},#{searchContent},#{searchDate})
     </insert>
-
+    <!--  该日期对应的该查询关键词是否存在  -->
     <select id="selectByDateAndContent" resultType="Integer" parameterType="string">
         select count(*) from search_result where search_content = #{searchContent} and search_date = #{searchDate};
     </select>
